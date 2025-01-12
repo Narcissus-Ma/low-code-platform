@@ -2,6 +2,7 @@
   "name": " vue3-low-code-platform",
   "version": "0.0.0",
   "private": true,
+  "homepage": "https://narcissus-ma.github.io/low-code-platform/",
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
@@ -13,7 +14,9 @@
     "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
-    "lint:style": "stylelint **/*.{vue,css}"
+    "lint:style": "stylelint **/*.{vue,css}",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@glideapps/glide-data-grid": "5.2.1",
