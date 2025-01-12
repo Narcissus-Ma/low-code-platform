@@ -1,18 +1,18 @@
 import { createRouter, createWebHashHistory  } from 'vue-router'
 
-import AppView from '../views/AppView.vue'
+// import AppView from '../views/AppView.vue'
 
 const router = createRouter({
   history: createWebHashHistory (import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      redirect: '/app/layout'
+      redirect: '/app/actions'
     },
     {
       path: '/app',
       name: 'home',
-      component: AppView,
+      component: ()=> import('../views/AppView.vue'),
       children: [
         {
           path: 'dataSource',

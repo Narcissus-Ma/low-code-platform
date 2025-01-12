@@ -27,7 +27,7 @@ function greet(mode: PreviewType) {
       <div class="simulator-header">
         <StatusBar />
         <div class="simulator-navigator-wrapper">
-          <div class="simulator-navigator">Byelide</div>
+          <div class="simulator-navigator">Narcissus</div>
         </div>
       </div>
       <div class="simulator">

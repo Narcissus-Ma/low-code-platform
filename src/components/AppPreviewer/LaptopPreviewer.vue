@@ -40,7 +40,7 @@ function greet(mode: PreviewType) {
     <div class="layout-runner-content-wrapper tiny-scrollbar">
       <div class="layout-runner-content-header">
         <div class="layout-runner-content-navigator"></div>
-        <div class="layout-runner-content-title">Byelide</div>
+        <div class="layout-runner-content-title">Narcissus</div>
       </div>
       <div class="layout-runner-content">
         <BlocksRenderer />
